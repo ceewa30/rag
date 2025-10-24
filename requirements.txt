@@ -3,3 +3,12 @@ langchain-core
 langchain-community
 pypdf
 pymupdf
+sentence-transformers
+faiss-cpu
+chromadb
+langchain-openai
+docx2txt
+python-dotenv
+typesense
+langgraph
+langchain-groq
