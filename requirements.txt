@@ -12,3 +12,4 @@ python-dotenv
 typesense
 langgraph
 langchain-groq
+langchain-text-splitters

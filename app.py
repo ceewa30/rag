@@ -1,8 +1,8 @@
 from src.data_loader import load_all_documents
+from src.embedding import EmbeddingPipeline
 
 if __name__ == "__main__":
-    data_directory = "./data"  # Adjust the path as needed
-    docs = load_all_documents(data_directory)
-    print(f"Total documents loaded: {len(docs)}")
-    for i, doc in enumerate(docs):
-        print(f"Document {i+1} : {doc.metadata}")
+    docs = load_all_documents("data")
+    emb_pipe = EmbeddingPipeline()
+    chunks = emb_pipe.chunk_documents(docs)
+    print(chunks)
